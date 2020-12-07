@@ -14,10 +14,10 @@ public class DayOne {
 
         final int[] numbers =
                 fileService
-                .readAllLines(DATA_INPUT_FILE)
-                .stream()
-                .mapToInt(Integer::parseInt)
-                .toArray();
+                        .readAllLines(DATA_INPUT_FILE)
+                        .stream()
+                        .mapToInt(Integer::parseInt)
+                        .toArray();
 
 
         for (int i = 0; i < numbers.length; i++) {

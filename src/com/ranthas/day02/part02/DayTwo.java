@@ -14,11 +14,11 @@ public class DayTwo {
 
         final long count =
                 fileService
-                .readAllLines(DATA_INPUT_FILE)
-                .stream()
-                .map(stringLineConverter::convert)
-                .filter(Password::isValid)
-                .count();
+                        .readAllLines(DATA_INPUT_FILE)
+                        .stream()
+                        .map(stringLineConverter::convert)
+                        .filter(Password::isValid)
+                        .count();
 
         System.out.println("There are " + count + " valid passwords");
     }

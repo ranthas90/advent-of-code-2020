@@ -21,8 +21,7 @@ public class BinaryNumber {
         for (int i = 0; i < number.length(); i++) {
 
             long exponent = number.length() - 1 - i;
-            long pow = (long) Math.pow(2,exponent);
-
+            long pow = (long) Math.pow(2, exponent);
 
             decimalValue = decimalValue + (getBinaryValue(number.charAt(i)) * pow);
         }
@@ -32,7 +31,7 @@ public class BinaryNumber {
 
     private long getBinaryValue(char character) {
 
-        if (character =='F' || character == 'L') {
+        if (character == 'F' || character == 'L') {
             return 0L;
         }
 
