@@ -16,11 +16,11 @@ public class DayFive {
         FileService fileService = new FileServiceImpl();
         final List<Long> collect =
                 fileService
-                .readAllLines(DATA_INPUT_FILE)
-                .stream()
-                .map(line -> new BinaryNumber(line).getUniqueID())
-                .sorted()
-                .collect(Collectors.toList());
+                        .readAllLines(DATA_INPUT_FILE)
+                        .stream()
+                        .map(line -> new BinaryNumber(line).getUniqueID())
+                        .sorted()
+                        .collect(Collectors.toList());
 
         for (int i = 1; i < collect.size() - 1; i++) {
 
